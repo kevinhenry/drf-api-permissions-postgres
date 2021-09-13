@@ -65,8 +65,9 @@ Let’s move our site closer to production grade by adding Permissions and Postg
 
 ## Stretch
 
-[ ] Add social authentication.
-[ ] Add images to your site.
+[ ] Try different permission levels, including custom ones.
+[ ] Figure out how to directly access postgres running inside container. Hint: it will take research.
+[ ] Add a volume to persist data when container is shut down.
 
 
 ### Getting Started
