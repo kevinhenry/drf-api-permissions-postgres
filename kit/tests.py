@@ -14,16 +14,16 @@ class BlogTests(TestCase):
 
         test_post = Kit.objects.create(
             author = testuser1,
-            headline = 'Green Eggs and Ham',
-            note = 'I do not like green eggs and ham, Sam I  am.'
+            name = 'Green Eggs and Ham',
+            review = 'I do not like green eggs and ham, Sam I  am.'
         )
         test_post.save()
 
     def test_blog_content(self):
         post = Kit.objects.get(id=1)
         actual_author = str(post.author)
-        actual_headline = str(post.headline)
-        actual_note = str(post.note)
+        actual_name = str(post.name)
+        actual_review = str(post.review)
         self.assertEqual(actual_author, 'testuser1')
-        self.assertEqual(actual_headline, 'Green Eggs and Ham')
-        self.assertEqual(actual_note, 'I do not like green eggs and ham, Sam I  am.')
+        self.assertEqual(actual_name, 'Green Eggs and Ham')
+        self.assertEqual(actual_review, 'I do not like green eggs and ham, Sam I  am.')

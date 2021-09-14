@@ -87,7 +87,7 @@ DATABASES = {
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': 'postgress',
+        'PASSWORD': 'postgres',
         'HOST': 'db',
         'PORT': 5432,
     }
